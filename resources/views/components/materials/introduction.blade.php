@@ -18,8 +18,8 @@
 
             <!-- Image -->
             <div data-aos="fade-left">
-                <div class="relative rounded-xl overflow-hidden shadow-2xl h-96 lg:h-full">
-                    <img src="{{ asset('images/materials-hero.jpg') }}" alt="Premium Interior Materials"
+                <div class="relative rounded-xl overflow-hidden shadow-2xl h-96">
+                    <img src="{{ asset('images/materials/banner.jpg') }}" alt="Premium Interior Materials"
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
