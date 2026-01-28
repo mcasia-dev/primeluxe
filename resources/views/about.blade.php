@@ -1,0 +1,9 @@
+@extends('layouts.app')
+@section('content')
+    @include('components.about.hero')
+    @include('components.about.introduction')
+    @include('components.about.mission_vision')
+    @include('components.about.why_choose')
+    @include('components.about.gallery')
+    @include('components.about.animations')
+@endsection
