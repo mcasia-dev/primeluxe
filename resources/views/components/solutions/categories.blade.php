@@ -24,7 +24,7 @@
                 'Stainless Steel Kitchen Systems',
                 'Pantry & Provision Systems'
             ]"
-            imagePosition="right"
+            imagePosition="left"
             delay="0"
         />
 
@@ -39,7 +39,7 @@
                 'Modular Wardrobe Systems',
                 'Standard Wardrobes'
             ]"
-            imagePosition="left"
+            imagePosition="right"
             delay="100"
         />
 
@@ -53,7 +53,7 @@
                 'Bath Sanctuary Collection',
                 'Vanity Atelier Collection'
             ]"
-            imagePosition="right"
+            imagePosition="left"
             delay="200"
         />
 
@@ -68,7 +68,7 @@
                 'Storage Walls',
                 'Study & Media Cabinets'
             ]"
-            imagePosition="left"
+            imagePosition="right"
             delay="300"
         />
     </div>
