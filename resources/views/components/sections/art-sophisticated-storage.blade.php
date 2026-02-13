@@ -25,7 +25,7 @@
                     meticulously crafted to combine timeless elegance with modern functionality.
                 </p>
                 <p class="text-gray-700 text-lg leading-relaxed">
-                    For homes that reflect refined taste and thoughtful design.
+                    For homes that reflect refined taste and thoughtful functionality.
                 </p>
 
                 <!-- CTA Button -->
@@ -48,7 +48,7 @@
         </div>
 
         <!-- Features Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20 pt-16 border-t border-gray-200">
+        {{-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20 pt-16 border-t border-gray-200">
             <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="text-4xl font-bold text-yellow-500 mb-3">✓</div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Timeless Elegance</h3>
@@ -64,6 +64,6 @@
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Tailored</h3>
                 <p class="text-gray-600">Bespoke pieces designed specifically for your home and lifestyle.</p>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>

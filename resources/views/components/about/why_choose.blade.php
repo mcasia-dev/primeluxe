@@ -3,7 +3,6 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Primeluxe</h2>
-            <p class="text-lg text-gray-600">Distinguished expertise and unwavering commitment to excellence</p>
         </div>
 
         <!-- Features Grid -->

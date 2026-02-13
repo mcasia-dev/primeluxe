@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">No Brand Placeholder</title>
+  <desc id="desc">Placeholder image for missing brand logo</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <rect x="80" y="80" width="1040" height="640" rx="28" fill="none" stroke="#94a3b8" stroke-width="8" stroke-dasharray="16 12"/>
+
+  <g transform="translate(600 330)">
+    <rect x="-120" y="-72" width="240" height="144" rx="20" fill="#ffffff" stroke="#64748b" stroke-width="8"/>
+    <circle cx="-50" cy="-12" r="24" fill="#cbd5e1"/>
+    <path d="M -92 42 L -20 -20 L 32 28 L 72 -6 L 108 42 Z" fill="#94a3b8"/>
+  </g>
+
+  <text x="600" y="500" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#1e293b" letter-spacing="2">YOUR BRAND</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#475569">Image unavailable</text>
+</svg>
+

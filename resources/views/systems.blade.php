@@ -6,5 +6,5 @@
 
     @include('components.systems.categories')
 
-    @include('components.systems.cta')
+    {{-- @include('components.systems.cta') --}}
 @endsection

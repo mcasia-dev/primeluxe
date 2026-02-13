@@ -7,7 +7,7 @@
             Solutions
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Integrated interior environments designed for modern luxury living
+            Spaces Curated For You
         </p>
     </div>
 </section>

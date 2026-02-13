@@ -1,5 +1,5 @@
 <!-- Solution Environment Card Component -->
-@props(['title', 'description', 'image', 'items', 'imagePosition' => 'right', 'delay' => 0])
+@props(['title', 'description', 'image', 'items', 'imagePosition' => 'right', 'footerDescription', 'delay' => 0])
 
 <div class="mb-20 overflow-hidden rounded-xl shadow-lg bg-white" data-aos="fade-up" data-aos-delay="{{ $delay }}">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -27,6 +27,7 @@
                     @endforeach
                 </ul>
             </div>
+            <p class="text-gray-700 my-6 leading-relaxed">{{ $footerDescription }}</p>
         </div>
     </div>
 </div>
