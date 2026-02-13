@@ -9,11 +9,11 @@
                 </h2>
                 <div class="space-y-6 text-lg text-gray-700">
                     <p>
-                        Primeluxe designs interiors through systems — modular, structural. and metculously engineered.
-                        Each system is designed to ensure visual continuity, seamless intergration, and lasting
+                        Primeluxe designs interiors through systems — modular, structural. and meticulously engineered.
+                        Each system is designed to ensure visual continuity, seamless integration, and lasting
                         performance throughout the home.
                     </p>
-                    
+
                 </div>
             </div>
 

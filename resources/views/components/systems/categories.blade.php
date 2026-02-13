@@ -1,15 +1,16 @@
 <!-- Solution Categories Section -->
-<section id="systems" class="w-full py-20 sm:py-24 lg:py-28 bg-gray-50">
+<section id="systems" class="w-full bg-gray-50">
+    {{-- py-20 sm:py-24 lg:py-28 --}}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
+        {{-- <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
                 Our System Categories
             </h2>
             <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                 Intelligent architectural systems engineered for timeless performance and refined living
             </p>
-        </div>
+        </div> --}}
 
         <!-- Cabinet Systems -->
         <x-systems.card

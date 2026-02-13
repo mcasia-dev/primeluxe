@@ -7,7 +7,7 @@
             Materials
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            A Pallete of Eduring Materials for Timeless Interiors
+            A Pallete of Eduring Materials
         </p>
     </div>
 </section>

@@ -15,7 +15,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <!-- Solutions Card -->
             <a href="solutions"
-                class="group relative h-72 sm:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 data-aos="fade-up" data-aos-delay="100">
                 <img src="{{ asset('images/HOME/SECTION 3/1.jpg') }}" alt="Solutions"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -35,7 +35,7 @@
 
             <!-- Systems Card -->
             <a href="systems"
-                class="group relative h-72 sm:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 data-aos="fade-up" data-aos-delay="200">
                 <img src="{{ asset('images/HOME/SECTION 3/2.jpg') }}" alt="Systems"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -55,7 +55,7 @@
 
             <!-- Materials Card -->
             <a href="materials"
-                class="group relative h-72 sm:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 data-aos="fade-up" data-aos-delay="300">
                 <img src="{{ asset('images/HOME/SECTION 3/3.jpg') }}" alt="Materials"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -75,7 +75,7 @@
 
             <!-- Collections Card -->
             <a href="collections"
-                class="group relative h-72 sm:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 data-aos="fade-up" data-aos-delay="400">
                 <img src="{{ asset('images/HOME/SECTION 3/4.jpg') }}" alt="Collections"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -95,7 +95,7 @@
 
             <!-- Process Card -->
             <a href="process"
-                class="group relative h-72 sm:h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer sm:col-span-2 lg:col-span-1"
+                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer sm:col-span-2 lg:col-span-1"
                 data-aos="fade-up" data-aos-delay="500">
                 <img src="{{ asset('images/HOME/SECTION 3/5.jpg') }}" alt="Process"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />

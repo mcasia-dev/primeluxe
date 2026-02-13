@@ -10,8 +10,8 @@
                 <div class="space-y-6 text-lg text-gray-700">
                     <p>
                         Primeluxe creates integrated interior environments for modern luxury homes. From kitchens and
-                        wardrobes to utility spaces, every solution is conceived as part of a cohesive architectural
-                        language that balances refined aesthetics with intelligent performance.
+                        wardrobes to bathing and utility spaces, every solution is conceived as part of a cohesive
+                        architectural language that balances refined aesthetics with intelligent performance.
                     </p>
                     <p>
                         Each space is tailored to the rhythms of daily life, engineered for longevity, and crafted to
