@@ -7,7 +7,7 @@
             <div class="flex-shrink-0">
                 <a href="/" class="inline-flex items-center group">
                     <img src="{{ asset('images/PRIMELUXE_LOGO.png') }}" alt="Primeluxe Logo"
-                        class="h-12 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
+                        class="h-12 sm:h-24 w-auto transition-transform duration-300 group-hover:scale-105">
                 </a>
             </div>
 
@@ -27,9 +27,9 @@
             <nav class="hidden lg:flex items-center space-x-1">
                 @foreach ($navLinks as $link)
                     <a href="{{ $link['url'] }}"
-                        class="px-3 py-2 text-sm font-medium rounded-md transition-all duration-300 
-                        {{ request()->path() === ltrim($link['url'], '/') || (request()->path() === '' && $link['url'] === '/') 
-                            ? 'text-yellow-600 border-b-2 rounded-b-none border-yellow-600' 
+                        class="px-3 py-2 text-sm font-medium rounded-md transition-all duration-300
+                        {{ request()->path() === ltrim($link['url'], '/') || (request()->path() === '' && $link['url'] === '/')
+                            ? 'text-yellow-600 border-b-2 rounded-b-none border-yellow-600'
                             : 'text-gray-700 hover:text-yellow-600 hover:bg-gray-50' }}">
                         {{ $link['name'] }}
                     </a>
@@ -61,8 +61,8 @@
                 @foreach ($navLinks as $link)
                     <a href="{{ $link['url'] }}"
                         class="block px-3 py-2 text-base font-medium rounded-md transition-all duration-300
-                        {{ request()->path() === ltrim($link['url'], '/') || (request()->path() === '' && $link['url'] === '/') 
-                            ? 'text-yellow-600 border-b-2 border-yellow-600' 
+                        {{ request()->path() === ltrim($link['url'], '/') || (request()->path() === '' && $link['url'] === '/')
+                            ? 'text-yellow-600 border-b-2 border-yellow-600'
                             : 'text-gray-700 hover:text-yellow-600 hover:bg-gray-50' }}">
                         {{ $link['name'] }}
                     </a>

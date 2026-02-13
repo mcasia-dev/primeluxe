@@ -26,7 +26,7 @@
             data-aos-delay="0" data-aos-duration="800">
             Elevated Living. Exceptional Craftsmanship.
         </h1>
-        <p class="text-lg sm:text-xl md:text-2xl text-gray-100/90 mb-10 leading-relaxed max-w-3xl mx-auto"
+        <p class="text-lg sm:text-xl text-gray-100/90 mb-10 leading-relaxed max-w-3xl mx-auto"
             data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             Bespoke wardrobe and kitchen solutions for the refined, discerning homeowner.
         </p>

@@ -18,7 +18,7 @@
             description="Water-resistant, anti-rust, and antimicrobial — engineered for kitchens, baths, and utility spaces where hygiene and durability matter most."
             image="images/materials/stainless-steel-system.jpg"
             :items="[]"
-            imagePosition="right"
+            imagePosition="left"
             delay="0"
         />
 
@@ -28,7 +28,7 @@
             description="Italian laminates, eco-certified E0/E1 boards, veneers, and lacquered finishes — crafted to bring warmth, texture, and depth to every interior."
             image="images/materials/woods-and-laminate.jpg"
             :items="[]"
-            imagePosition="left"
+            imagePosition="right"
             delay="100"
         />
 
@@ -38,7 +38,7 @@
             description="Precision mechanisms from global leaders such as Blum and Hettich ensure every door, drawer, and panel moves with discreet, effortless control."
             image="images/materials/hardware.jpg"
             :items="[]"
-            imagePosition="right"
+            imagePosition="left"
             delay="200"
         />
     </div>
