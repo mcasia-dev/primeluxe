@@ -4,9 +4,9 @@
 
         <!-- Who We Are -->
         <div class="text-center">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">ABOUT US</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Company Profile</h2>
             <p class="text-gray-600 text-justify leading-relaxed text-lg">
-                Primeluxe Living and Design Inc. creates bespoke, high-end cabinet and storage solutions for the
+                Primeluxe Living & Designs Inc. creates bespoke, high-end cabinet and storage solutions for the
                 discerning homeowner. We design and manufacture premium kitchens, wardrobes, and custom cabinetry that
                 transform living spaces into modern sanctuaries.
             </p>

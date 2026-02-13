@@ -1,15 +1,16 @@
 <!-- Solution Categories Section -->
-<section id="solutions" class="w-full py-20 sm:py-24 lg:py-28 bg-gray-50">
+<section id="solutions" class="w-full  bg-gray-50">
+    {{-- py-20 sm:py-24 lg:py-28 --}}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
+        {{-- <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
                 Our Solution Categories
             </h2>
             <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                 Comprehensive design solutions tailored to every environment in your home
             </p>
-        </div>
+        </div> --}}
 
         <!-- Kitchen Environments -->
         <x-solutions.card
@@ -30,7 +31,7 @@
         <!-- Wardrobe Environments -->
         <x-solutions.card
             title="Wardrobe Environments"
-            tagline="Elegant spaces of quiet luxury."
+            tagline=""
             description="Private dressing spaces designed with clarity, elegance, and precision. Our wardrobes transform storage into a quiet luxury — where every garment, accessory, and ritual has its place."
             image="images/solutions/wardrobe.jpg"
             :items="[
@@ -45,7 +46,7 @@
         <!-- Bath & Vanity Environments -->
         <x-solutions.card
             title="Bath & Vanity Environments"
-            tagline="Personal sanctuaries of calm and beauty."
+            tagline=""
             description="Serene, water-resistant spaces conceived as personal sanctuaries. From vanities to complete bath systems, Primeluxe designs environments that bring calm, balance, and beauty into daily self-care routines."
             image="images/solutions/bath_and_vanity.jpg"
             :items="[
@@ -59,8 +60,8 @@
         <!-- Living & Utility Environments -->
         <x-solutions.card
             title="Living & Utility Environments"
-            tagline="Efficiency with understated sophistication."
-            description="From refined storage walls to discreet laundry systems, these spaces support everyday life with understated sophistication — beautifully integrated and quietly efficient."
+            tagline=""
+            description="From refined storage walls to discreet laundry systems, these spaces support everyday life with understated sophistication — beautifully integrated, quietly efficient."
             image="images/solutions/living_and_utility.jpg"
             :items="[
                 'Laundry Systems',

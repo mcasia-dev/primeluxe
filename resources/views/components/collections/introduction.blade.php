@@ -9,7 +9,7 @@
                 </h2>
                 <div class="space-y-6 text-lg text-gray-700">
                     <p>
-                       Primeluxe collections express distinct design sesibikities — each a complete visual and functional language that flows across kitchens, wardrobes, doors, and living spaces.
+                       Primeluxe collections express distinct design sensibilities — each a complete visual and functional language that flows across kitchens, wardrobes, doors, and living spaces.
                     </p>
                 </div>
             </div>

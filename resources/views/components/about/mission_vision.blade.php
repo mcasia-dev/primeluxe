@@ -3,7 +3,7 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Mission & Vision</h2>
-            <p class="text-lg text-gray-600">Guiding our commitment to excellence and innovation</p>
+            {{-- <p class="text-lg text-gray-600">Guiding our commitment to excellence and innovation</p> --}}
         </div>
 
         <!-- Mission and Vision Grid -->
@@ -23,11 +23,9 @@
                 <h5 class="text-base md:text-lg font-bold text-gray-900 mb-3">Crafting Modern Sanctuaries with Elegance
                     and Innovation</h5>
                 <p class="text-gray-600 leading-relaxed text-sm md:text-base">
-                    To craft transformative living spaces through meticulously designed cabinetry and storage solutions
-                    that
-                    harmonize functionality with aesthetic refinement. We empower homeowners to live intentionally in
-                    spaces
-                    that reflect their sophistication and elevate their daily experience.
+                    We create refined, full customizable interiors shaped by minimalist elegance and purposeful
+                    design—enhancing daily rituals, championing sustainable materials, and delivering highly
+                    personalized experiences from concept to completion.
                 </p>
             </div>
 
@@ -50,9 +48,9 @@
                 </h5>
 
                 <p class="text-gray-600 leading-relaxed text-sm md:text-base">
-                    To be the premier destination for bespoke, luxury cabinetry and design solutions globally—recognized
-                    for our unwavering commitment to Italian craftsmanship, innovative design thinking, and creating
-                    spaces that become sanctuaries of beauty and purpose in every home we transform.
+                    We envision interiors defined by thoughtful simplicity, refined beauty, and intelligent use of
+                    resources—where clarity, intention, and restraint create spaces that feel centered, meaningful, and
+                    deeply connected to the way you live.
                 </p>
             </div>
         </div>

@@ -7,7 +7,7 @@
             Process
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            The Journey To Your Perfect Space
+            The Journey to Your Perfect Space
         </p>
     </div>
 </section>

@@ -1,20 +1,21 @@
 <!-- Solution Categories Section -->
-<section id="materials" class="w-full py-20 sm:py-24 lg:py-28 bg-gray-50">
+<section id="materials" class="w-full bg-gray-50">
+    {{-- py-20 sm:py-24 lg:py-28 --}}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
+        {{-- <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
                 Our Materials Categories
             </h2>
             <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                 Comprehensive design materials tailored to every environment in your home
             </p>
-        </div>
+        </div> --}}
 
         <!-- Stainless Steel Systems -->
         <x-materials.card
             title="Stainless Steel Systems"
-            description="Water-resistant, anti-rus, and antimicrobial — engineered for kitchens, baths, and utility spaces where hygiene and durability matter most."
+            description="Water-resistant, anti-rust, and antimicrobial — engineered for kitchens, baths, and utility spaces where hygiene and durability matter most."
             image="images/materials/stainless-steel-system.jpg"
             :items="[]"
             imagePosition="right"

@@ -7,7 +7,7 @@
             Systems
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Precision-Engineered Interior Systems for Seamless Functionality
+            Precision-Engineered Interior Systems
         </p>
     </div>
 </section>
