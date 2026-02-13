@@ -22,7 +22,7 @@
                 'Custom-Built Cabinetry',
                 'Stainless Steel Cabinet Systems',
             ]"
-            imagePosition="right"
+            imagePosition="left"
             delay="0"
         />
 
@@ -37,7 +37,7 @@
                 'Invisible Door Systems',
                 'Ghost Door Systems',
             ]"
-            imagePosition="left"
+            imagePosition="right"
             delay="100"
         />
 
@@ -51,7 +51,7 @@
                 'Wardrobe Systems',
                 'Pantry Systems'
             ]"
-            imagePosition="right"
+            imagePosition="left"
             delay="200"
         />
     </div>

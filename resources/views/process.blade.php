@@ -4,5 +4,5 @@
 
     @include('components.process.introduction')
 
-    @include('components.process.cta')
+    {{-- @include('components.process.cta') --}}
 @endsection
