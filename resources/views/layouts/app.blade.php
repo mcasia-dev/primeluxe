@@ -12,7 +12,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-gray-100 opacity-0 transition-opacity duration-1200 ease-out"
+<body class="font-sans bg-gray-100 opacity-0 transition-opacity duration-1200 ease-out"
     onload="document.body.classList.add('opacity-100')">
 
     {{-- Header --}}

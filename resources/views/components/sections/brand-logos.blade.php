@@ -66,49 +66,63 @@
         ],
     ];
 @endphp
-<section id="logos"
-    class="relative w-full py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
+<style>
+    @keyframes brand-marquee {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .brand-marquee-track {
+        width: max-content;
+        animation: brand-marquee 102s linear infinite;
+    }
+    .brand-marquee-wrap::before,
+    .brand-marquee-wrap::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        pointer-events: none;
+        z-index: 10;
+    }
+    .brand-marquee-wrap::before {
+        left: 0;
+        background: linear-gradient(to right, #f3f4f6 0%, rgba(243, 244, 246, 0) 100%);
+    }
+    .brand-marquee-wrap::after {
+        right: 0;
+        background: linear-gradient(to left, #f3f4f6 0%, rgba(243, 244, 246, 0) 100%);
+    }
+    @media (max-width: 640px) {
+        .brand-marquee-track {
+            animation-duration: 74s;
+        }
+    }
+</style>
+
+<section id="logos" class="relative w-full py-16 sm:py-20 bg-gray-100 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-                Our Partners
-            </h2>
-            <p class="text-gray-600 text-lg">
+        <div class="mb-10 sm:mb-12 text-center sm:text-left" data-aos="fade-up">
+            <p class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gray-500 mb-4">Our Partners</p>
+            <h2 class="text-3xl sm:text-4xl font-light text-gray-900">
                 Partnering with the world's finest brands to deliver excellence
-            </p>
-            <div class="h-1 w-16 bg-yellow-500 mx-auto mt-6"></div>
+            </h2>
         </div>
 
-        <!-- Logo Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-            @foreach ($brands as $brand)
-                <div class="flex items-center justify-center h-24 p-4 rounded-lg hover:bg-gray-100 transition-all duration-300 group cursor-pointer logo-item opacity-0 scale-90"
-                    data-aos="fade-up">
-                    <img src="{{ $brand['img'] }}" alt="{{ $brand['name'] }}"
-                        class="max-h-20 w-auto object-contain group-hover:scale-110 transition-transform duration-300 brightness-75 group-hover:brightness-100">
-                </div>
-            @endforeach
+        <div class="brand-marquee-wrap relative overflow-hidden">
+            <div class="brand-marquee-track flex items-center gap-4 sm:gap-6 lg:gap-8 py-2">
+                @foreach (array_merge($brands, $brands) as $brand)
+                    <div class="h-20 sm:h-24 w-[140px] sm:w-[170px] lg:w-[190px] flex items-center justify-center shrink-0">
+                        <img src="{{ $brand['img'] }}" alt="{{ $brand['name'] ?? 'Brand logo' }}"
+                            class="max-h-14 sm:max-h-16 w-auto object-contain transition duration-300">
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </section>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove("opacity-0", "scale-90");
-                    entry.target.classList.add("opacity-100", "scale-100");
-                }
-            });
-        }, {
-            threshold: 0.3
-        });
-
-        document.querySelectorAll(".logo-item").forEach((el, index) => {
-            el.style.transitionDelay = `${index * 80}ms`;
-            observer.observe(el);
-        });
-    });
-</script>
