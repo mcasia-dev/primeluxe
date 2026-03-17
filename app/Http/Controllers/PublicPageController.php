@@ -23,6 +23,11 @@ class PublicPageController extends Controller
         return view('materials');
     }
 
+    public function products()
+    {
+        return view('products');
+    }
+
     public function collections()
     {
         return view('collections');
@@ -33,12 +38,12 @@ class PublicPageController extends Controller
         return view('process');
     }
 
-    public function about() 
+    public function about()
     {
         return view('about');
     }
 
-    public function contact() 
+    public function contact()
     {
         return view('contact');
     }

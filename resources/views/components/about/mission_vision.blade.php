@@ -17,7 +17,7 @@
                 <h5 class="text-base md:text-lg font-medium text-gray-900 mb-3">Crafting Modern Sanctuaries with Elegance and Innovation</h5>
                 <p class="text-gray-600 leading-relaxed text-sm md:text-base">
                     We create refined, full customizable interiors shaped by minimalist elegance and purposeful
-                    design-enhancing daily rituals, championing sustainable materials, and delivering highly
+                    design — enhancing daily rituals, championing sustainable materials, and delivering highly
                     personalized experiences from concept to completion.
                 </p>
             </div>
@@ -36,7 +36,7 @@
                 <h5 class="text-base md:text-lg font-medium text-gray-900 mb-3">Shaping the Future of Minimalist Living</h5>
                 <p class="text-gray-600 leading-relaxed text-sm md:text-base">
                     We envision interiors defined by thoughtful simplicity, refined beauty, and intelligent use of
-                    resources-where clarity, intention, and restraint create spaces that feel centered, meaningful, and
+                    resources — where clarity, intention, and restraint create spaces that feel centered, meaningful, and
                     deeply connected to the way you live.
                 </p>
             </div>

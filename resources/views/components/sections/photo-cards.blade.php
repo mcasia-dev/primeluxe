@@ -9,34 +9,34 @@
             'span' => 'col-span-12 lg:col-span-7 lg:row-span-2 min-h-[320px] sm:min-h-[380px] lg:min-h-[520px]',
         ],
         [
-            'title' => 'Systems',
-            'tagline' => 'Engineered details that optimize every zone.',
-            'route' => 'systems',
-            'image' => asset('images/HOME/SECTION 3/2.jpg'),
-            'delay' => '140',
-            'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
-        ],
-        [
             'title' => 'Materials',
             'tagline' => 'Premium finishes selected for longevity and character.',
             'route' => 'materials',
             'image' => asset('images/HOME/SECTION 3/3.jpg'),
+            'delay' => '140',
+            'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
+        ],
+        [
+            'title' => 'Products',
+            'tagline' => 'Engineered details that optimize every zone.',
+            'route' => 'products',
+            'image' => asset('images/HOME/SECTION 3/2.jpg'),
             'delay' => '200',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
         ],
         [
-            'title' => 'Collections',
+            'title' => 'About',
             'tagline' => 'Curated selections inspired by modern luxury.',
-            'route' => 'collections',
-            'image' => asset('images/HOME/SECTION 3/4.jpg'),
+            'route' => 'about',
+            'image' => asset('images/ABOUT US/SECTION 1/1.jpg'),
             'delay' => '260',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-4 min-h-[250px] sm:min-h-[280px]',
         ],
         [
-            'title' => 'Process',
+            'title' => 'Contact',
             'tagline' => 'From concept to installation, meticulously handled.',
-            'route' => 'process',
-            'image' => asset('images/HOME/SECTION 3/5.jpg'),
+            'route' => 'contact',
+            'image' => asset('images/HOME/SECTION 5/inside news/NEWS 3/1.jpg'),
             'delay' => '320',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-8 min-h-[250px] sm:min-h-[280px]',
         ],
@@ -66,9 +66,9 @@
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900">
                 Explore Our Offerings
             </h2>
-            <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mt-5">
-                Discover comprehensive solutions tailored to transform your living spaces
-            </p>
+{{--            <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mt-5">--}}
+{{--                Discover comprehensive solutions tailored to transform your living spaces--}}
+{{--            </p>--}}
         </div>
 
         <div class="grid grid-cols-12 gap-5 sm:gap-6 lg:gap-7 auto-rows-fr">

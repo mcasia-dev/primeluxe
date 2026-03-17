@@ -14,7 +14,7 @@
                     Your home deserves more than ordinary cabinets.
                 </p>
                 <p class="text-gray-700 text-lg leading-relaxed">
-                    It deserves furniture that elevates your daily rituals, from selecting the perfect ensemble to
+                    It deserves furniture that elevates your daily rituals — from selecting the perfect ensemble to
                     preparing a meal for loved ones.
                 </p>
                 <p class="text-gray-700 text-lg leading-relaxed">
@@ -25,17 +25,17 @@
                     For homes that reflect refined taste and thoughtful functionality.
                 </p>
 
-                <div class="pt-3">
-                    <a href="{{ route('collections') }}"
-                        class="inline-flex items-center gap-2 px-8 py-3 border border-yellow-500 text-yellow-700 hover:text-yellow-800 hover:border-yellow-600 rounded-lg transition-all duration-300 hover:bg-yellow-50">
-                        Explore Our Collections
-                        <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
+{{--                <div class="pt-3">--}}
+{{--                    <a href="{{ route('collections') }}"--}}
+{{--                        class="inline-flex items-center gap-2 px-8 py-3 border border-yellow-500 text-yellow-700 hover:text-yellow-800 hover:border-yellow-600 rounded-lg transition-all duration-300 hover:bg-yellow-50">--}}
+{{--                        Explore Our Collections--}}
+{{--                        <span aria-hidden="true">&rarr;</span>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
             </div>
 
             <div class="relative" data-aos="fade-left" data-aos-delay="180">
-                <div class="absolute -inset-3 sm:-inset-4 border border-black/10 rounded-2xl"></div>
+                <div class="absolute -inset-3 sm:-inset-4 "></div>
                 <div class="relative h-[360px] sm:h-[440px] lg:h-[520px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(18,18,18,0.16)]">
                     <img src="{{ asset('images/HOME/sophisticated-house.jpg') }}" alt="Sophisticated Storage Solution"
                         class="w-full h-full object-cover" />

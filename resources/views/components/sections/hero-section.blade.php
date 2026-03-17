@@ -52,14 +52,14 @@
             </h1>
             <p class="text-lg sm:text-xl text-gray-100/90 mb-10 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up"
                 data-aos-delay="200" data-aos-duration="800">
-                Bespoke wardrobe and kitchen solutions for the refined, discerning homeowner.
+                Bespoke interior systems for the refined, discerning homeowner.
             </p>
-            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                <button
-                    class="px-8 py-3 border border-white/70 hover:bg-white text-white hover:text-black font-medium rounded-lg shadow-lg transition-all duration-300">
-                    Book Your Private Consultation
-                </button>
-            </div>
+{{--            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">--}}
+{{--                <button--}}
+{{--                    class="px-8 py-3 border border-white/70 hover:bg-white text-white hover:text-black font-medium rounded-lg shadow-lg transition-all duration-300">--}}
+{{--                    Book Your Private Consultation--}}
+{{--                </button>--}}
+{{--            </div>--}}
         </div>
     </div>
 

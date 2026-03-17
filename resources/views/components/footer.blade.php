@@ -6,14 +6,12 @@
             $navLinks = [
                 ['name' => 'Home', 'url' => route('home')],
                 ['name' => 'Solutions', 'url' => route('solutions')],
-                ['name' => 'Systems', 'url' => route('systems')],
                 ['name' => 'Materials', 'url' => route('materials')],
-                ['name' => 'Collections', 'url' => route('collections')],
+                ['name' => 'Products', 'url' => route('products')],
             ];
 
             $companyLinks = [
                 ['name' => 'About Us', 'url' => route('about')],
-                ['name' => 'Process', 'url' => route('process')],
                 ['name' => 'Contact', 'url' => route('contact')],
             ];
         @endphp
@@ -29,22 +27,22 @@
                 </p>
 
                 <div class="flex gap-2.5">
-                    <a href="https://facebook.com/primeluxe" target="_blank" rel="noopener noreferrer"
+                    <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-yellow-400 transition duration-300 p-2 rounded-lg border border-white/10 hover:border-yellow-500/40 hover:bg-white/[0.03]"
                         aria-label="Facebook">
                         @include('components.icons.facebook-icon')
                     </a>
-                    <a href="https://instagram.com/primeluxe" target="_blank" rel="noopener noreferrer"
+                    <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-yellow-400 transition duration-300 p-2 rounded-lg border border-white/10 hover:border-yellow-500/40 hover:bg-white/[0.03]"
                         aria-label="Instagram">
                         @include('components.icons.instagram-icon')
                     </a>
-                    <a href="https://linkedin.com/company/primeluxe" target="_blank" rel="noopener noreferrer"
+                    <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-yellow-400 transition duration-300 p-2 rounded-lg border border-white/10 hover:border-yellow-500/40 hover:bg-white/[0.03]"
                         aria-label="Tiktok">
                         @include('components.icons.tiktok-icon')
                     </a>
-                    <a href="https://twitter.com/primeluxe" target="_blank" rel="noopener noreferrer"
+                    <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-yellow-400 transition duration-300 p-2 rounded-lg border border-white/10 hover:border-yellow-500/40 hover:bg-white/[0.03]"
                         aria-label="Twitter">
                         @include('components.icons.twitter-icon')

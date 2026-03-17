@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <x-materials.card
             title="Stainless Steel Systems"
-            description="Water-resistant, anti-rust, and antimicrobial - engineered for kitchens, baths, and utility spaces where hygiene and durability matter most."
+            description="Made of 304 <strong>food grade stainless steel</strong>, Water-resistant, anti-rust, and antimicrobial — engineered for kitchens, baths, and utility spaces where hygiene and durability matter most. Durable and lasts a lifetime."
             image="images/materials/stainless-steel-system.jpg"
             :items="[]"
             imagePosition="left"
@@ -11,7 +11,7 @@
 
         <x-materials.card
             title="Wood & Laminates"
-            description="Italian laminates, eco-certified E0/E1 boards, veneers, and lacquered finishes - crafted to bring warmth, texture, and depth to every interior."
+            description="Italian laminates, eco-certified E0/E1 boards, veneers, and lacquered finishes — crafted to bring warmth, texture, and depth to every interior."
             image="images/materials/woods-and-laminate.jpg"
             :items="[]"
             imagePosition="right"
@@ -20,7 +20,7 @@
 
         <x-materials.card
             title="Hardware"
-            description="Precision mechanisms from global leaders such as Blum and Hettich ensure every door, drawer, and panel moves with discreet, effortless control."
+            description="Precision mechanisms from global leaders such as Blum, Higold, and Nuomi ensure every door, drawer, and panel moves with discreet, effortless control."
             image="images/materials/hardware.jpg"
             :items="[]"
             imagePosition="left"

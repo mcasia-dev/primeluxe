@@ -4,7 +4,7 @@
     data-aos="fade-up" data-aos-delay="{{ $delay }}">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
         <div
-            class="relative h-80 sm:h-96 overflow-hidden bg-gray-200 {{ $imagePosition === 'left' ? 'order-2 lg:order-1' : 'order-2 lg:order-2' }}">
+            class="relative h-80 sm:h-[600px] overflow-hidden bg-gray-200 {{ $imagePosition === 'left' ? 'order-2 lg:order-1' : 'order-2 lg:order-2' }}">
             <img src="{{ asset($image) }}" alt="{{ $title }}"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-black/8 to-transparent"></div>

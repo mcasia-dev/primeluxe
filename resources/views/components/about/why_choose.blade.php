@@ -13,7 +13,7 @@
                 </div>
                 <h3 class="text-xl font-medium text-gray-900 mb-3">Global Design Heritage</h3>
                 <p class="text-gray-600 leading-relaxed">
-                    Our team is trained in the traditions of Euro-Asian kitchen and wardrobe craftsmanship, bringing
+                    Our team is trained in the traditions of European kitchen and wardrobe craftsmanship, bringing
                     world-class design sensibility to every project.
                 </p>
             </div>
