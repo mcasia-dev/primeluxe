@@ -1,21 +1,8 @@
-<!-- Solution Categories Section -->
-<section id="systems" class="w-full bg-gray-50">
-    {{-- py-20 sm:py-24 lg:py-28 --}}
+<section id="systems" class="w-full py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-gray-50 via-white to-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        {{-- <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-                Our System Categories
-            </h2>
-            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                Intelligent architectural systems engineered for timeless performance and refined living
-            </p>
-        </div> --}}
-
-        <!-- Cabinet Systems -->
         <x-systems.card
             title="Cabinet Systems"
-            description="A refined framework for kitchens, wardrobes, and storage spaces — offering flexibility without compromising on architectural integrity."
+            description="A refined framework for kitchens, wardrobes, and storage spaces - offering flexibility without compromising on architectural integrity."
             image="images/systems/cabinet-system.jpg"
             :items="[
                 'Modular Cabinet Systems',
@@ -26,10 +13,9 @@
             delay="0"
         />
 
-        <!-- Door Systems -->
         <x-systems.card
             title="Door Systems"
-            description="Doors are not accessories — they are architectural elements. Our door systems move effortlessly between rooms, enhancing flow, privacy, and visual harmony."
+            description="Doors are not accessories - they are architectural elements. Our door systems move effortlessly between rooms, enhancing flow, privacy, and visual harmony."
             image="images/systems/door-system.jpg"
             :items="[
                 'Swing Door Systems',
@@ -41,7 +27,6 @@
             delay="100"
         />
 
-        <!-- Storage Systems -->
         <x-systems.card
             title="Storage Systems"
             description="Highly adaptable storage architectures designed to evolve with the home and the people who live in it."
