@@ -8,7 +8,7 @@
         <div class="rounded-2xl overflow-hidden border border-black/10 shadow-[0_20px_50px_rgba(18,18,18,0.14)]"
              data-aos="fade-up" data-aos-delay="100">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d811.5564961277616!2d120.99817532252506!3d14.631229248459263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sph!4v1762151076371!5m2!1sen!2sph"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.484306425555!2d120.99754507475346!3d14.628427985861263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b612b36001a5%3A0x2108c635a31201ed!2sADECS%20International%20Corp!5e0!3m2!1sen!2sph!4v1773792926252!5m2!1sen!2sph"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
         </div>

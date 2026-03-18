@@ -12,7 +12,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-medium text-gray-900 mb-3">Global Design Heritage</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <p class="text-gray-600 leading-relaxed text-justify">
                     Our team is trained in the traditions of European kitchen and wardrobe craftsmanship, bringing
                     world-class design sensibility to every project.
                 </p>
@@ -26,7 +26,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-medium text-gray-900 mb-3">Uncompromising Quality Control</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <p class="text-gray-600 leading-relaxed text-justify">
                     Modern manufacturing and strict quality systems ensure consistency, precision, and excellence across
                     all product lines.
                 </p>
@@ -40,7 +40,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-medium text-gray-900 mb-3">Eco-Conscious Innovation</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <p class="text-gray-600 leading-relaxed text-justify">
                     We use EO/E1 European-standard boards and durable, waterproof, anti-rust materials to create
                     interiors that are as responsible as they are beautiful.
                 </p>

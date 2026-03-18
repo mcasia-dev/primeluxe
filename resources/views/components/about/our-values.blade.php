@@ -10,7 +10,7 @@
 
             <div class="lg:col-span-8 space-y-10 sm:space-y-12">
                 <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="50">
-                    <p class="text-gray-600 leading-loose text-base md:text-lg">
+                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
                         At Primeluxe, our values are reflected in the people behind every project. Our team approaches each
                         commission with integrity, professionalism, and a deep respect for craftsmanship. From design to
                         fabrication
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="120">
-                    <p class="text-gray-600 leading-loose text-base md:text-lg">
+                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
                         Driven by passion for thoughtful design and a dedication to our clients, we believe great interiors are
                         created through collaboration, discipline, and pride in our work. Every member of our team is committed
                         to
@@ -32,7 +32,7 @@
 
                 <div class="pt-2 border-t border-black/10" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-xl md:text-2xl font-light text-gray-900 mb-4 mt-6">Our Goal for Our Clients</h3>
-                    <p class="text-gray-600 leading-loose text-base md:text-lg">
+                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
                         Our goal is to create spaces that feel effortlessly aligned with the way our clients live. Through
                         close collaboration and full customization, we design kitchens, wardrobes, and interior systems that
                         balance beauty with intelligent function. Each project is approached with care and precision,

@@ -5,7 +5,7 @@
                 <h2 class="text-4xl sm:text-5xl font-light text-gray-900 mb-7 leading-tight">
                     Spaces Curated For You
                 </h2>
-                <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <div class="space-y-6 text-lg text-gray-700 leading-relaxed text-justify">
                     <p class="text-gray-700">
                         Primeluxe creates integrated interior environments for modern luxury homes. From kitchens and
                         wardrobes to bathing and utility spaces, every solution is conceived as part of a cohesive

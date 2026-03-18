@@ -101,9 +101,9 @@
 
                     <div>
                         <p class="text-gray-500 text-[11px] uppercase tracking-[0.2em] font-semibold mb-1.5">Email</p>
-                        <a href="mailto:contact@primeluxe.com"
+                        <a href="mailto:info@primeluxe.com"
                             class="text-sm text-gray-400 hover:text-yellow-400 transition-colors duration-300 font-medium break-all">
-                            contact@primeluxe.com
+                            info@primeluxe.com
                         </a>
                         <p class="text-xs text-gray-600 mt-1">We'll respond within 24h</p>
                     </div>

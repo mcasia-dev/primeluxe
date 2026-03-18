@@ -16,7 +16,7 @@
             @if (!empty($tagline))
                 <p class="text-lg text-yellow-700 font-medium mb-4">{{ $tagline }}</p>
             @endif
-            <p class="text-gray-700 mb-6 leading-relaxed">{{ $description }}</p>
+            <p class="text-gray-700 mb-6 leading-relaxed text-justify">{{ $description }}</p>
             <div>
                 <h4 class="font-medium text-gray-900 mb-3 tracking-wide">Includes:</h4>
                 <ul class="space-y-3 text-gray-700">

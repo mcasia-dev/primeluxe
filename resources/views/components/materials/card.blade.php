@@ -13,7 +13,7 @@
         <div
             class="p-8 sm:p-10 lg:p-14 flex flex-col justify-center {{ $imagePosition === 'left' ? 'order-1 lg:order-2' : 'order-1 lg:order-1' }}">
             <h3 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4 leading-tight">{{ $title }}</h3>
-            <p class="text-gray-700 mb-6 leading-relaxed">{!! $description !!}</p>
+            <p class="text-gray-700 mb-6 leading-relaxed text-justify">{!! $description !!}</p>
             @if (!empty($items))
                 <div>
                     <ul class="space-y-3 text-gray-700">

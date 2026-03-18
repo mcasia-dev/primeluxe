@@ -9,7 +9,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div class="space-y-6" data-aos="fade-right" data-aos-delay="120">
+            <div class="space-y-6 text-justify" data-aos="fade-right" data-aos-delay="120">
                 <p class="text-gray-700 text-lg leading-relaxed">
                     Your home deserves more than ordinary cabinets.
                 </p>

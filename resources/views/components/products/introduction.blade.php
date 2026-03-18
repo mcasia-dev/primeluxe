@@ -5,7 +5,7 @@
                 <h2 class="text-4xl sm:text-5xl font-light text-gray-900 mb-7 leading-tight">
                     Curated Interior Expressions
                 </h2>
-                <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <div class="space-y-6 text-lg text-gray-700 leading-relaxed text-justify">
                     <p class="text-gray-700">
                         Primeluxe collections express distinct design sensibilities — each a complete visual and
                         functional language that flows across kitchens, wardrobes, doors, and living spaces.
