@@ -1,117 +1,99 @@
-<!-- Photo Cards Section -->
-<section id="photo-cards" class="relative w-full bg-white py-20 sm:py-24 lg:py-28">
+@php
+    $offerings = [
+        [
+            'title' => 'Solutions',
+            'tagline' => 'Tailored concepts for elevated living spaces.',
+            'route' => 'solutions',
+            'image' => asset('images/HOME/SECTION 3/1.jpg'),
+            'delay' => '80',
+            'span' => 'col-span-12 lg:col-span-7 lg:row-span-2 min-h-[320px] sm:min-h-[380px] lg:min-h-[520px]',
+        ],
+        [
+            'title' => 'Materials',
+            'tagline' => 'Premium finishes selected for longevity and character.',
+            'route' => 'materials',
+            'image' => asset('images/HOME/SECTION 3/3.jpg'),
+            'delay' => '140',
+            'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
+        ],
+        [
+            'title' => 'Products',
+            'tagline' => 'Engineered details that optimize every zone.',
+            'route' => 'products',
+            'image' => asset('images/HOME/SECTION 3/2.jpg'),
+            'delay' => '200',
+            'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
+        ],
+        [
+            'title' => 'About',
+            'tagline' => 'Curated selections inspired by modern luxury.',
+            'route' => 'about',
+            'image' => asset('images/ABOUT US/SECTION 1/1.jpg'),
+            'delay' => '260',
+            'span' => 'col-span-12 sm:col-span-6 lg:col-span-4 min-h-[250px] sm:min-h-[280px]',
+        ],
+        [
+            'title' => 'Contact',
+            'tagline' => 'From concept to installation, meticulously handled.',
+            'route' => 'contact',
+            'image' => asset('images/HOME/SECTION 5/inside news/NEWS 3/1.jpg'),
+            'delay' => '320',
+            'span' => 'col-span-12 sm:col-span-6 lg:col-span-8 min-h-[250px] sm:min-h-[280px]',
+        ],
+    ];
+@endphp
+
+<style>
+    .offering-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent 35%, rgba(255, 255, 255, 0.18) 50%, transparent 65%);
+        transform: translateX(-140%);
+        transition: transform 0.7s ease;
+        pointer-events: none;
+    }
+
+    .offering-card:hover::after {
+        transform: translateX(140%);
+    }
+</style>
+
+<section id="photo-cards" class="relative w-full py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-[#f7f6f4] via-white to-[#f3f3f1]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <div class="text-center mb-14 sm:mb-16" data-aos="fade-up">
+            <p class="text-[11px] sm:text-xs tracking-[0.28em] uppercase text-gray-500 mb-4">Refined Selections</p>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900">
                 Explore Our Offerings
             </h2>
-            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                Discover comprehensive solutions tailored to transform your living spaces
-            </p>
+{{--            <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mt-5">--}}
+{{--                Discover comprehensive solutions tailored to transform your living spaces--}}
+{{--            </p>--}}
         </div>
 
-        <!-- Photo Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <!-- Solutions Card -->
-            <a href="solutions"
-                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('images/HOME/SECTION 3/1.jpg') }}" alt="Solutions"
-                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
-                <div class="absolute inset-0 flex items-end justify-center p-6">
-                    <div class="text-center">
-                        <h3
-                            class="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
-                            SOLUTIONS
-                        </h3>
-                        <div
-                            class="h-1 w-12 bg-yellow-500 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div class="grid grid-cols-12 gap-5 sm:gap-6 lg:gap-7 auto-rows-fr">
+            @foreach ($offerings as $index => $offering)
+                <a href="{{ route($offering['route']) }}"
+                    class="offering-card group {{ $offering['span'] }} relative isolate overflow-hidden rounded-2xl border border-black/10 shadow-[0_18px_40px_rgba(20,20,20,0.12)] hover:shadow-[0_28px_56px_rgba(20,20,20,0.2)] transition-all duration-500"
+                    data-aos="fade-up" data-aos-delay="{{ $offering['delay'] }}">
+                    <img src="{{ $offering['image'] }}" alt="{{ $offering['title'] }}"
+                        class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
 
-            <!-- Systems Card -->
-            <a href="systems"
-                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                data-aos="fade-up" data-aos-delay="200">
-                <img src="{{ asset('images/HOME/SECTION 3/2.jpg') }}" alt="Systems"
-                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
-                <div class="absolute inset-0 flex items-end justify-center p-6">
-                    <div class="text-center">
-                        <h3
-                            class="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
-                            SYSTEMS
-                        </h3>
-                        <div
-                            class="h-1 w-12 bg-yellow-500 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                    </div>
-                </div>
-            </a>
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/75"></div>
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,215,120,0.22),transparent_50%)]"></div>
 
-            <!-- Materials Card -->
-            <a href="materials"
-                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                data-aos="fade-up" data-aos-delay="300">
-                <img src="{{ asset('images/HOME/SECTION 3/3.jpg') }}" alt="Materials"
-                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
-                <div class="absolute inset-0 flex items-end justify-center p-6">
-                    <div class="text-center">
-                        <h3
-                            class="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
-                            MATERIALS
-                        </h3>
-                        <div
-                            class="h-1 w-12 bg-yellow-500 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="relative z-10 h-full flex flex-col justify-end p-5 sm:p-6">
+                        <div class="max-w-[90%]">
+                            <p class="text-[11px] sm:text-xs tracking-[0.25em] uppercase text-white/70 mb-2">
+                                Primeluxe
+                            </p>
+                            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-light tracking-wide text-white leading-tight">
+                                {{ strtoupper($offering['title']) }}
+                            </h3>
                         </div>
                     </div>
-                </div>
-            </a>
-
-            <!-- Collections Card -->
-            <a href="collections"
-                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                data-aos="fade-up" data-aos-delay="400">
-                <img src="{{ asset('images/HOME/SECTION 3/4.jpg') }}" alt="Collections"
-                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
-                <div class="absolute inset-0 flex items-end justify-center p-6">
-                    <div class="text-center">
-                        <h3
-                            class="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
-                            COLLECTIONS
-                        </h3>
-                        <div
-                            class="h-1 w-12 bg-yellow-500 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Process Card -->
-            <a href="process"
-                class="group relative h-52 sm:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer sm:col-span-2 lg:col-span-1"
-                data-aos="fade-up" data-aos-delay="500">
-                <img src="{{ asset('images/HOME/SECTION 3/5.jpg') }}" alt="Process"
-                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
-                <div class="absolute inset-0 flex items-end justify-center p-6">
-                    <div class="text-center">
-                        <h3
-                            class="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">
-                            PROCESS
-                        </h3>
-                        <div
-                            class="h-1 w-12 bg-yellow-500 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                    </div>
-                </div>
-            </a>
+                </a>
+            @endforeach
         </div>
     </div>
 </section>
