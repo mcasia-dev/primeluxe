@@ -1,7 +1,17 @@
+@php
+    $subjectOptions = collect($contact?->subject_options ?: [
+        ['label' => 'Design Consultation', 'value' => 'consultation'],
+        ['label' => 'Request a Quote', 'value' => 'quote'],
+        ['label' => 'Discuss a Project', 'value' => 'project'],
+        ['label' => 'Customer Support', 'value' => 'support'],
+        ['label' => 'Other', 'value' => 'other'],
+    ]);
+@endphp
+
 <section class="w-full bg-white py-20 sm:py-24 lg:py-28">
     <div class="max-w-4xl mx-auto px-6">
         <div class="transition-all duration-1000 ease-out" data-aos="fade-up">
-            <h2 class="text-4xl sm:text-5xl font-light text-gray-900 mb-12 text-center">Get In Touch With Us</h2>
+            <h2 class="text-4xl sm:text-5xl font-light text-gray-900 mb-12 text-center">{{ $contact?->form_title ?? 'Get In Touch With Us' }}</h2>
 
             <form class="bg-white rounded-2xl border border-black/10 shadow-[0_20px_50px_rgba(18,18,18,0.12)] p-8 sm:p-10 lg:p-12">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
@@ -45,11 +55,9 @@
                         class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-500/50 focus:border-yellow-500 focus:outline-none transition-all"
                         required>
                         <option value="">Select a subject...</option>
-                        <option value="consultation">Design Consultation</option>
-                        <option value="quote">Request a Quote</option>
-                        <option value="project">Discuss a Project</option>
-                        <option value="support">Customer Support</option>
-                        <option value="other">Other</option>
+                        @foreach ($subjectOptions as $option)
+                            <option value="{{ $option['value'] ?? '' }}">{{ $option['label'] ?? '' }}</option>
+                        @endforeach
                     </select>
                 </div>
 
@@ -63,7 +71,7 @@
                 <div class="flex justify-center pt-4">
                     <button type="submit"
                         class="inline-flex items-center justify-center px-10 py-3 rounded-lg border border-yellow-500 bg-yellow-500 text-white font-medium hover:bg-yellow-600 hover:border-yellow-600 transition-all duration-300 shadow-lg">
-                        Send Message
+                        {{ $contact?->submit_button_label ?? 'Send Message' }}
                     </button>
                 </div>
             </form>

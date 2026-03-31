@@ -1,10 +1,12 @@
 @php
-    $offerings = [
+    use Illuminate\Support\Facades\Storage;
+
+    $fallbackOfferings = [
         [
             'title' => 'Solutions',
             'tagline' => 'Tailored concepts for elevated living spaces.',
             'route' => 'solutions',
-            'image' => asset('images/HOME/SECTION 3/1.jpg'),
+            'image' => 'images/HOME/SECTION 3/1.jpg',
             'delay' => '80',
             'span' => 'col-span-12 lg:col-span-7 lg:row-span-2 min-h-[320px] sm:min-h-[380px] lg:min-h-[520px]',
         ],
@@ -12,7 +14,7 @@
             'title' => 'Materials',
             'tagline' => 'Premium finishes selected for longevity and character.',
             'route' => 'materials',
-            'image' => asset('images/HOME/SECTION 3/3.jpg'),
+            'image' => 'images/HOME/SECTION 3/3.jpg',
             'delay' => '140',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
         ],
@@ -20,7 +22,7 @@
             'title' => 'Products',
             'tagline' => 'Engineered details that optimize every zone.',
             'route' => 'products',
-            'image' => asset('images/HOME/SECTION 3/2.jpg'),
+            'image' => 'images/HOME/SECTION 3/2.jpg',
             'delay' => '200',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-5 min-h-[250px] sm:min-h-[280px]',
         ],
@@ -28,7 +30,7 @@
             'title' => 'About',
             'tagline' => 'Curated selections inspired by modern luxury.',
             'route' => 'about',
-            'image' => asset('images/ABOUT US/SECTION 1/1.jpg'),
+            'image' => 'images/ABOUT US/SECTION 1/1.jpg',
             'delay' => '260',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-4 min-h-[250px] sm:min-h-[280px]',
         ],
@@ -36,11 +38,13 @@
             'title' => 'Contact',
             'tagline' => 'From concept to installation, meticulously handled.',
             'route' => 'contact',
-            'image' => asset('images/HOME/SECTION 5/inside news/NEWS 3/1.jpg'),
+            'image' => 'images/HOME/SECTION 5/inside news/NEWS 3/1.jpg',
             'delay' => '320',
             'span' => 'col-span-12 sm:col-span-6 lg:col-span-8 min-h-[250px] sm:min-h-[280px]',
         ],
     ];
+
+    $offerings = filled($homepage?->offerings) ? $homepage->offerings : $fallbackOfferings;
 @endphp
 
 <style>
@@ -62,21 +66,28 @@
 <section id="photo-cards" class="relative w-full py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-[#f7f6f4] via-white to-[#f3f3f1]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14 sm:mb-16" data-aos="fade-up">
-            <p class="text-[11px] sm:text-xs tracking-[0.28em] uppercase text-gray-500 mb-4">Refined Selections</p>
+            <p class="text-[11px] sm:text-xs tracking-[0.28em] uppercase text-gray-500 mb-4">{{ $homepage?->offerings_eyebrow ?? 'Refined Selections' }}</p>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900">
-                Explore Our Offerings
+                {{ $homepage?->offerings_title ?? 'Explore Our Offerings' }}
             </h2>
-{{--            <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mt-5">--}}
-{{--                Discover comprehensive solutions tailored to transform your living spaces--}}
-{{--            </p>--}}
         </div>
 
         <div class="grid grid-cols-12 gap-5 sm:gap-6 lg:gap-7 auto-rows-fr">
             @foreach ($offerings as $index => $offering)
+                @php
+                    $fallbackImage = $fallbackOfferings[$index]['image'] ?? $fallbackOfferings[$index % count($fallbackOfferings)]['image'];
+                    $imageValue = $offering['image'] ?? null;
+                    $image = filled($imageValue)
+                        ? (str($imageValue)->startsWith(['http://', 'https://', '/storage/', 'images/'])
+                            ? asset($imageValue)
+                            : Storage::disk('public')->url($imageValue))
+                        : asset($fallbackImage);
+                @endphp
+
                 <a href="{{ route($offering['route']) }}"
                     class="offering-card group {{ $offering['span'] }} relative isolate overflow-hidden rounded-2xl border border-black/10 shadow-[0_18px_40px_rgba(20,20,20,0.12)] hover:shadow-[0_28px_56px_rgba(20,20,20,0.2)] transition-all duration-500"
-                    data-aos="fade-up" data-aos-delay="{{ $offering['delay'] }}">
-                    <img src="{{ $offering['image'] }}" alt="{{ $offering['title'] }}"
+                    data-aos="fade-up" data-aos-delay="{{ $offering['delay'] ?? ($index + 1) * 80 }}">
+                    <img src="{{ $image }}" alt="{{ $offering['title'] }}"
                         class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
 
                     <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/75"></div>

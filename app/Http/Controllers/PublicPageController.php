@@ -1,16 +1,28 @@
 <?php
+
 namespace App\Http\Controllers;
+
+use App\Models\AboutUs;
+use App\Models\Contact;
+use App\Models\Homepage;
+use App\Models\Material;
+use App\Models\Product;
+use App\Models\Solution;
 
 class PublicPageController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $homepage = Homepage::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('home', compact('homepage'));
     }
 
     public function solutions()
     {
-        return view('solutions');
+        $solution = Solution::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('solutions', compact('solution'));
     }
 
     public function systems()
@@ -20,12 +32,16 @@ class PublicPageController extends Controller
 
     public function materials()
     {
-        return view('materials');
+        $material = Material::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('materials', compact('material'));
     }
 
     public function products()
     {
-        return view('products');
+        $product = Product::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('products', compact('product'));
     }
 
     public function collections()
@@ -40,11 +56,15 @@ class PublicPageController extends Controller
 
     public function about()
     {
-        return view('about');
+        $about = AboutUs::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('about', compact('about'));
     }
 
     public function contact()
     {
-        return view('contact');
+        $contact = Contact::with(['media'])->isPublished()->latest('id')->first();
+
+        return view('contact', compact('contact'));
     }
 }

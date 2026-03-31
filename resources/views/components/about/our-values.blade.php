@@ -3,42 +3,69 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
             <div class="lg:col-span-4" data-aos="fade-up">
                 <div class="lg:sticky lg:top-28">
-                    <p class="text-xs tracking-[0.22em] uppercase text-yellow-700 mb-3">Primeluxe</p>
-                    <h2 class="text-4xl sm:text-5xl font-light text-gray-900 leading-tight">Our Values</h2>
+                    <p class="text-xs tracking-[0.22em] uppercase text-yellow-700 mb-3">{{ $about->our_values_eyebrow ?? 'Primeluxe' }}</p>
+                    <h2 class="text-4xl sm:text-5xl font-light text-gray-900 leading-tight">{{ $about->our_values_title ?? 'Our Values' }}</h2>
                 </div>
             </div>
 
             <div class="lg:col-span-8 space-y-10 sm:space-y-12">
-                <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="50">
-                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
-                        At Primeluxe, our values are reflected in the people behind every project. Our team approaches each
-                        commission with integrity, professionalism, and a deep respect for craftsmanship. From design to
-                        fabrication
-                        and installation, we work with care, precision, and accountability — ensuring that every detail meets
-                        the
-                        highest standards of quality.
-                    </p>
-                </div>
+                @if(filled($about->values))
+                    @foreach($about->values as $key => $value)
+                        <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="50">
+                            <div
+                                class="text-gray-600 leading-loose text-base md:text-lg">{!! $value['description'] !!}</div>
+                        </div>
+                    @endforeach
+                @else
+                    <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="50">
+                        <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
+                            At Primeluxe, our values are reflected in the people behind every project. Our team
+                            approaches
+                            each
+                            commission with integrity, professionalism, and a deep respect for craftsmanship. From
+                            design to
+                            fabrication
+                            and installation, we work with care, precision, and accountability — ensuring that every
+                            detail
+                            meets
+                            the
+                            highest standards of quality.
+                        </p>
+                    </div>
 
-                <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="120">
-                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
-                        Driven by passion for thoughtful design and a dedication to our clients, we believe great interiors are
-                        created through collaboration, discipline, and pride in our work. Every member of our team is committed
-                        to
-                        delivering spaces that are not only beautifully made, but built with honest, reliability, and lasting
-                        value.
-                    </p>
-                </div>
+                    <div class="border-l border-black/10 pl-5 sm:pl-6" data-aos="fade-up" data-aos-delay="120">
+                        <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
+                            Driven by passion for thoughtful design and a dedication to our clients, we believe great
+                            interiors are
+                            created through collaboration, discipline, and pride in our work. Every member of our team
+                            is
+                            committed
+                            to
+                            delivering spaces that are not only beautifully made, but built with honest, reliability,
+                            and
+                            lasting
+                            value.
+                        </p>
+                    </div>
+                @endif
 
                 <div class="pt-2 border-t border-black/10" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl md:text-2xl font-light text-gray-900 mb-4 mt-6">Our Goal for Our Clients</h3>
-                    <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
-                        Our goal is to create spaces that feel effortlessly aligned with the way our clients live. Through
-                        close collaboration and full customization, we design kitchens, wardrobes, and interior systems that
-                        balance beauty with intelligent function. Each project is approached with care and precision,
-                        ensuring the final result is not only visually exceptional but also intuitive, personal, and deeply
-                        connected to the homeowner's lifestyle.
-                    </p>
+                    @if(!is_null($about->our_values_description))
+                        <div class="text-gray-600 leading-loose [&_h3]:mt-6 [&_h3]:mb-4 [&_h3]:text-xl [&_h3]:font-light [&_h3]:text-gray-900 md:[&_h3]:text-2xl [&_p]:text-base [&_p]:leading-loose [&_p]:text-gray-600 md:[&_p]:text-lg">{!! $about->our_values_description !!}</div>
+                    @else
+                        <h3 class="text-xl md:text-2xl font-light text-gray-900 mb-4 mt-6">Our Goal for Our Clients</h3>
+                        <p class="text-gray-600 leading-loose text-base md:text-lg text-justify">
+                            Our goal is to create spaces that feel effortlessly aligned with the way our clients live.
+                            Through
+                            close collaboration and full customization, we design kitchens, wardrobes, and interior
+                            systems that
+                            balance beauty with intelligent function. Each project is approached with care and
+                            precision,
+                            ensuring the final result is not only visually exceptional but also intuitive, personal, and
+                            deeply
+                            connected to the homeowner's lifestyle.
+                        </p>
+                    @endif
                 </div>
             </div>
         </div>

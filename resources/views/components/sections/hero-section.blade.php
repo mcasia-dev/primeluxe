@@ -29,9 +29,15 @@
     }
 </style>
 
+@php
+    $heroImage = filled($homepage?->getFirstMediaUrl('homepage-hero'))
+        ? $homepage->getFirstMediaUrl('homepage-hero')
+        : asset('images/HOME/HOME_1.jpg');
+@endphp
+
 <section class="relative w-full min-h-[78vh] sm:min-h-[85vh] lg:min-h-screen overflow-hidden">
     <div class="hero-visual absolute inset-0 bg-cover bg-center"
-        style="background-image: url('{{ asset('images/HOME/HOME_1.jpg') }}');"></div>
+        style="background-image: url('{{ $heroImage }}');"></div>
 
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,211,120,0.18),transparent_45%)] hero-glow"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/28 to-black/52"></div>
@@ -48,18 +54,12 @@
         <div class="text-center text-white max-w-4xl">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light mb-6 leading-tight" data-aos="fade-up" data-aos-delay="0"
                 data-aos-duration="800">
-                Elevated Living. Exceptional Craftsmanship.
+                {{ $homepage?->hero_title ?? 'Elevated Living. Exceptional Craftsmanship.' }}
             </h1>
             <p class="text-lg sm:text-xl text-gray-100/90 mb-10 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up"
                 data-aos-delay="200" data-aos-duration="800">
-                Bespoke interior systems for the refined, discerning homeowner.
+                {{ $homepage?->hero_subtitle ?? 'Bespoke interior systems for the refined, discerning homeowner.' }}
             </p>
-{{--            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">--}}
-{{--                <button--}}
-{{--                    class="px-8 py-3 border border-white/70 hover:bg-white text-white hover:text-black font-medium rounded-lg shadow-lg transition-all duration-300">--}}
-{{--                    Book Your Private Consultation--}}
-{{--                </button>--}}
-{{--            </div>--}}
         </div>
     </div>
 
